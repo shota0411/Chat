@@ -66,7 +66,7 @@ final class SampleData {
         return steven
     }
 
-    let messageImages: [UIImage] = [UIImage(), UIImage(), UIImage()]
+    let messageImages: [UIImage] = [UIImage(named: "a")!, UIImage(named: "a")!, UIImage(named: "a")!]
 
     var now = Date()
 
@@ -185,13 +185,13 @@ final class SampleData {
     func getAvatarFor(sender: Sender) -> Avatar {
         switch sender {
         case dan:
-            return Avatar(image: UIImage(), initials: "DL")
+            return Avatar(image: UIImage(named: "a"), initials: "DL")
         case steven:
             return Avatar(initials: "S")
         case jobs:
-            return Avatar(image: UIImage(), initials: "SJ")
+            return Avatar(image: UIImage(named: "a"), initials: "SJ")
         case cook:
-            return Avatar(image: UIImage())
+            return Avatar(image: UIImage(named: "a"))
         default:
             return Avatar()
         }

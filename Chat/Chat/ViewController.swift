@@ -47,11 +47,11 @@ class ViewController: MessagesViewController {
         refreshControl.addTarget(self, action: #selector(ConversationViewController.loadMoreMessages), for: .valueChanged)
         
         navigationItem.rightBarButtonItems = [
-            UIBarButtonItem(image: UIImage(named: "ic_keyboard"),
+            UIBarButtonItem(image: UIImage(named: "a"),
                             style: .plain,
                             target: self,
                             action: #selector(ConversationViewController.handleKeyboardButton)),
-            UIBarButtonItem(image: UIImage(named: "ic_typing"),
+            UIBarButtonItem(image: UIImage(named: "a"),
                             style: .plain,
                             target: self,
                             action: #selector(ConversationViewController.handleTyping))
@@ -314,9 +314,9 @@ extension ViewController: MessagesDisplayDelegate {
     
     func annotationViewForLocation(message: MessageType, at indexPath: IndexPath, in messageCollectionView: MessagesCollectionView) -> MKAnnotationView? {
         let annotationView = MKAnnotationView(annotation: nil, reuseIdentifier: nil)
-        let pinImage = #imageLiteral(resourceName: "pin")
+        let pinImage = UIImage(named: "a")
         annotationView.image = pinImage
-        annotationView.centerOffset = CGPoint(x: 0, y: -pinImage.size.height / 2)
+        annotationView.centerOffset = CGPoint(x: 0, y: -pinImage!.size.height / 2)
         return annotationView
     }
     
