@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14F19C302095014800AA2FAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F19C2F2095014800AA2FAF /* AppDelegate.swift */; };
 		14F19C322095014800AA2FAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F19C312095014800AA2FAF /* ViewController.swift */; };
 		14F19C352095014800AA2FAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F19C332095014800AA2FAF /* Main.storyboard */; };
 		14F19C382095014800AA2FAF /* Chat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14F19C362095014800AA2FAF /* Chat.xcdatamodeld */; };
@@ -15,8 +14,16 @@
 		14F19C3D2095014800AA2FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F19C3B2095014800AA2FAF /* LaunchScreen.storyboard */; };
 		14F19C482095014800AA2FAF /* ChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F19C472095014800AA2FAF /* ChatTests.swift */; };
 		14F19C532095014800AA2FAF /* ChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F19C522095014800AA2FAF /* ChatUITests.swift */; };
-		14F19C632095039F00AA2FAF /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F19C612095037F00AA2FAF /* Messages.framework */; };
-		14F19C642095039F00AA2FAF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F19C622095037F00AA2FAF /* MessageUI.framework */; };
+		14F19C6E209506CC00AA2FAF /* Settings+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F19C66209506CB00AA2FAF /* Settings+UserDefaults.swift */; };
+		14F19C6F209506CC00AA2FAF /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F19C67209506CB00AA2FAF /* TableViewCells.swift */; };
+		14F19C70209506CC00AA2FAF /* IMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F19C68209506CB00AA2FAF /* IMessageViewController.swift */; };
+		14F19C71209506CC00AA2FAF /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F19C69209506CB00AA2FAF /* InboxViewController.swift */; };
+		14F19C72209506CC00AA2FAF /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F19C6A209506CB00AA2FAF /* SampleData.swift */; };
+		14F19C73209506CC00AA2FAF /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F19C6B209506CB00AA2FAF /* ConversationViewController.swift */; };
+		14F19C74209506CC00AA2FAF /* MockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F19C6C209506CB00AA2FAF /* MockMessage.swift */; };
+		14F19C75209506CC00AA2FAF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F19C6D209506CC00AA2FAF /* SettingsViewController.swift */; };
+		14F19C772095072300AA2FAF /* MessageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F19C762095072300AA2FAF /* MessageKit.framework */; };
+		14F19C79209508FF00AA2FAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F19C78209508FF00AA2FAF /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +45,6 @@
 
 /* Begin PBXFileReference section */
 		14F19C2C2095014800AA2FAF /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		14F19C2F2095014800AA2FAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14F19C312095014800AA2FAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		14F19C342095014800AA2FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14F19C372095014800AA2FAF /* Chat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chat.xcdatamodel; sourceTree = "<group>"; };
@@ -51,8 +57,16 @@
 		14F19C4E2095014800AA2FAF /* ChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F19C522095014800AA2FAF /* ChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUITests.swift; sourceTree = "<group>"; };
 		14F19C542095014800AA2FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14F19C612095037F00AA2FAF /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
-		14F19C622095037F00AA2FAF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		14F19C66209506CB00AA2FAF /* Settings+UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Settings+UserDefaults.swift"; sourceTree = "<group>"; };
+		14F19C67209506CB00AA2FAF /* TableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCells.swift; sourceTree = "<group>"; };
+		14F19C68209506CB00AA2FAF /* IMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMessageViewController.swift; sourceTree = "<group>"; };
+		14F19C69209506CB00AA2FAF /* InboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		14F19C6A209506CB00AA2FAF /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		14F19C6B209506CB00AA2FAF /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		14F19C6C209506CB00AA2FAF /* MockMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMessage.swift; sourceTree = "<group>"; };
+		14F19C6D209506CC00AA2FAF /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		14F19C762095072300AA2FAF /* MessageKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageKit.framework; path = Carthage/Build/iOS/MessageKit.framework; sourceTree = "<group>"; };
+		14F19C78209508FF00AA2FAF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14F19C632095039F00AA2FAF /* Messages.framework in Frameworks */,
-				14F19C642095039F00AA2FAF /* MessageUI.framework in Frameworks */,
+				14F19C772095072300AA2FAF /* MessageKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +119,15 @@
 		14F19C2E2095014800AA2FAF /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				14F19C2F2095014800AA2FAF /* AppDelegate.swift */,
+				14F19C78209508FF00AA2FAF /* AppDelegate.swift */,
+				14F19C6B209506CB00AA2FAF /* ConversationViewController.swift */,
+				14F19C68209506CB00AA2FAF /* IMessageViewController.swift */,
+				14F19C69209506CB00AA2FAF /* InboxViewController.swift */,
+				14F19C6C209506CB00AA2FAF /* MockMessage.swift */,
+				14F19C6A209506CB00AA2FAF /* SampleData.swift */,
+				14F19C66209506CB00AA2FAF /* Settings+UserDefaults.swift */,
+				14F19C6D209506CC00AA2FAF /* SettingsViewController.swift */,
+				14F19C67209506CB00AA2FAF /* TableViewCells.swift */,
 				14F19C312095014800AA2FAF /* ViewController.swift */,
 				14F19C332095014800AA2FAF /* Main.storyboard */,
 				14F19C392095014800AA2FAF /* Assets.xcassets */,
@@ -138,8 +159,7 @@
 		14F19C602095037F00AA2FAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				14F19C612095037F00AA2FAF /* Messages.framework */,
-				14F19C622095037F00AA2FAF /* MessageUI.framework */,
+				14F19C762095072300AA2FAF /* MessageKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -296,9 +316,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F19C79209508FF00AA2FAF /* AppDelegate.swift in Sources */,
+				14F19C71209506CC00AA2FAF /* InboxViewController.swift in Sources */,
+				14F19C74209506CC00AA2FAF /* MockMessage.swift in Sources */,
+				14F19C75209506CC00AA2FAF /* SettingsViewController.swift in Sources */,
 				14F19C382095014800AA2FAF /* Chat.xcdatamodeld in Sources */,
+				14F19C73209506CC00AA2FAF /* ConversationViewController.swift in Sources */,
+				14F19C6E209506CC00AA2FAF /* Settings+UserDefaults.swift in Sources */,
+				14F19C70209506CC00AA2FAF /* IMessageViewController.swift in Sources */,
 				14F19C322095014800AA2FAF /* ViewController.swift in Sources */,
-				14F19C302095014800AA2FAF /* AppDelegate.swift in Sources */,
+				14F19C6F209506CC00AA2FAF /* TableViewCells.swift in Sources */,
+				14F19C72209506CC00AA2FAF /* SampleData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +494,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZGDYV3KT3T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Chat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matsudashota.Chat;
@@ -481,6 +513,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZGDYV3KT3T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Chat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matsudashota.Chat;
