@@ -15,6 +15,8 @@
 		14F19C3D2095014800AA2FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F19C3B2095014800AA2FAF /* LaunchScreen.storyboard */; };
 		14F19C482095014800AA2FAF /* ChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F19C472095014800AA2FAF /* ChatTests.swift */; };
 		14F19C532095014800AA2FAF /* ChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F19C522095014800AA2FAF /* ChatUITests.swift */; };
+		14F19C632095039F00AA2FAF /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F19C612095037F00AA2FAF /* Messages.framework */; };
+		14F19C642095039F00AA2FAF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F19C622095037F00AA2FAF /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		14F19C4E2095014800AA2FAF /* ChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F19C522095014800AA2FAF /* ChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUITests.swift; sourceTree = "<group>"; };
 		14F19C542095014800AA2FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14F19C612095037F00AA2FAF /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		14F19C622095037F00AA2FAF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F19C632095039F00AA2FAF /* Messages.framework in Frameworks */,
+				14F19C642095039F00AA2FAF /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,7 @@
 				14F19C462095014800AA2FAF /* ChatTests */,
 				14F19C512095014800AA2FAF /* ChatUITests */,
 				14F19C2D2095014800AA2FAF /* Products */,
+				14F19C602095037F00AA2FAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +135,15 @@
 			path = ChatUITests;
 			sourceTree = "<group>";
 		};
+		14F19C602095037F00AA2FAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14F19C612095037F00AA2FAF /* Messages.framework */,
+				14F19C622095037F00AA2FAF /* MessageUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +154,7 @@
 				14F19C282095014800AA2FAF /* Sources */,
 				14F19C292095014800AA2FAF /* Frameworks */,
 				14F19C2A2095014800AA2FAF /* Resources */,
+				14F19C65209503B500AA2FAF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -256,6 +273,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14F19C65209503B500AA2FAF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/MessageKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		14F19C282095014800AA2FAF /* Sources */ = {
